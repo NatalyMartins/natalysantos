@@ -1,0 +1,102 @@
+
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head>
+        <title> Rebeca Andrade- Contato</title>
+	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Nataly M. dos Santos">
+		<meta name="description" content=" Rebeca Andrade - Guia completo">
+		<meta name="keywords" content="Guia, Rebeca, Andrade, Olimpiadas, RebecaAndrade, medalhas, atleta, brasil, paris">
+		<meta http-equiv="refresh" content="120">
+		<link rel="stylesheet" type="text/css" href="estilo.css"> 
+		<script language="Javascript" type="text/javascript">
+			function validar() {
+				var vnome = form1.nome.value; 
+				var vemail = form1.email.value; 
+				var vnota = form1.nota.value;
+				
+				if(vnome ==""){
+					alert("Preencha o campo vazio com seu nome");
+					form1.nome.focus();
+					return false;
+				}
+				if(vnome.length<3){
+					alert("Digite seu nome completo");
+					form1.nome.focus();
+					return false;
+				}
+				if(vemail ==""){
+					alert("Por favor, indique um e-mail válido.");
+					form1.email.focus();
+					return false;
+				}
+				
+				if(vnota ==""){
+					alert("Selecione uma nota");
+					form1.nota.focus();
+					return false;
+				}
+				}
+		</script>
+		<link rel="icon" type="image/jpg" href="imagens/contato.png">
+	</head>
+	<body>
+		<br>
+	    <div id="header">
+			<h1><img src="imagens/olimpiadas.png" width="150"></h1>
+				 <ul id="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="desafios.html">Desafios</a></li>
+					<li><a href="destaques.html">Destaques</a></li>
+					<li><a href="medalhas.html">Medalhas</a></li>
+					<li><a href="fonte.html">Fonte</a></li>
+					<li><a href="contato.html"  class="ativa">Contato</a></li>
+				 </ul>
+		</div>
+		<br>
+		<div id="section_c">
+		<br><br>
+		<div id="contato">
+		<center>
+		<form name="form1" method="get" action="confirmaçaodedados.html">
+			<h3>Preencha os dados no campo abaixo:</h3> 
+				Nome:<input name="nome" class="fm" type="text" size="60" placeholder="Campo obrigatório! Preencha aqui seu nome!"  name= "name" /><br><br>
+				Email:<input  size="60" class="fm"  placeholder="Campo obrigatório! Preencha aqui seu email!" name="email" /> <br><br>
+				Dê uma nota para o site: 
+				<select class="fm" name="nota">
+					<option>
+					<option>0
+					<option>1
+					<option>2
+					<option>3
+					<option>4
+					<option>5
+					<option>6
+					<option>7
+					<option>8
+					<option>9
+					<option>10
+				</select>
+		<br><br>
+				Deixe seu comentário:
+		<br>
+			<textarea class="fm" cols="60" rows="10" name= "textarea"></textarea>
+		<br><br>
+			<input type="submit" class="botao" onclick="return validar()">
+			<input type="reset" class="botao" value="Limpar">
+			
+		</form>
+		</center>
+		</div>
+		</div>
+		<br><br>
+		<div id="footer">
+			<p>Nataly Martins dos Santos 2024  - &copyTodos os direitos reservados </p>
+			<p>Trabalho acadêmico sem fins lucrativos</p>
+		</div>
+		<div id="ancora"><a href="#"><img src="imagens/ancora.png" width="40"></a>
+		</div>
+	</body>
+</html>
